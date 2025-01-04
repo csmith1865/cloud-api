@@ -34,6 +34,7 @@ To start the development server, run:
 # For local development, you can use the following command to start a postgres instanc
 # Don't use in production
 docker run --name jetkvm-cloud-db \
+    -p 5432:5432 \
     -e POSTGRES_USER=jetkvm \
     -e POSTGRES_PASSWORD=mysecretpassword \
     -e POSTGRES_DB=jetkvm \
